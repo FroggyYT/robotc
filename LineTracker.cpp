@@ -1,6 +1,8 @@
 // Includes
 
-void run() {
+int main() {
+    // Init Vex
+
     while (true) {
         wait(100, msec);
         if (RightTracker.sensitivity() > 50) {
@@ -15,12 +17,6 @@ void run() {
             // Stop RightMotor
         }
     }
-}
-
-int main() {
-    // Init Vex
-
-    run();
 
     return 0;
 }
